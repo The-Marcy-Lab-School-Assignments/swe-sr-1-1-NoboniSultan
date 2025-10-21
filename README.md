@@ -30,12 +30,30 @@ Below, we've provided an outline for your response but feel free to modify it as
 
 ### Response
 
-[Replace with your explanation of the concept with an analogy]
+According to MDN, a function is a block of code that performs a specific task. A function can take input values called parameters and can send back an output called a `return` value.
 
-Check out this example:
+You can think of a function like a recipe. The ingredients of are like the inputs, the cooking steps are like the lines of code inside the function and the finished dish is like the output returned at the end. 
+
+### Example
 
 ```js
-// Add your example here
+const makeCurry = (masala, chicken) => {
+    return masala + " " + chicken;
+};
+
+console.log(makeCurry("masala", "chicken"));
 ```
 
-[Replace with your explanation of the example and explanation of the syntax]
+### Explanation of the Syntax
+
+- `const makeCurry = (masala, chicken) => { ... }` defines an ***arrow function*** called makeCurry.
+
+- `(masala, chicken)` are the ***parameters***, representing the inputs to the function — like ingredients in a recipe.
+
+- The `{ ... }` part is the code block, where the steps of the recipe happen.
+
+- The ***return*** statement sends back the result the “finished dish.”
+
+- Finally, `makeCurry("masala", "chicken")` is how we ***invoke*** the function so that it runs and produces an output.
+
+Just like following a recipe, a function takes inputs, processes them through a set of steps, and produces a final result.
